@@ -17,6 +17,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+
+
+from task1.views import in_games, in_cart, in_platform
+from task1.views import sign_up_by_html
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('platform/', in_platform),
+    path('platform/games/', in_games),
+    path('platform/cart/', in_cart),
+    path('', sign_up_by_html),
+
 ]

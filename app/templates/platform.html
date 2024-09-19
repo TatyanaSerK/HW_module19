@@ -1,0 +1,16 @@
+{% extends "menu.html" %}
+
+{% block pagename %}
+    <p><a> Приветствуем, {{username}}!</a> </p>
+    {{block.super }}
+{% endblock%}
+
+{% block menu %}
+    {{block.super }}
+{% endblock %}
+
+{% block content %}
+    {{block.super }}
+{% endblock %}
+
+
